@@ -8,6 +8,9 @@ salario = float(input("Digite o salário (ou um valor negativo para encerrar): "
 
 while salario >= 0.0:
    filhos = int(input("Número de filhos: "))
+   while filhos < 0:
+       filhos = int(input("Outro número de filhos: "))
+       
    total_salario += salario
    total_filhos += filhos
    contagem_pessoas += 1
